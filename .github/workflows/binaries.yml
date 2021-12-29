@@ -8,6 +8,23 @@ on: [push]
   #      - 'v*'
 
 jobs:
+  release-linux-amd64:
+    name: release-linux-amd64
+    runs-on: ubuntu:latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Dependencies
+      run: |
+        apt update
+        apt install -y allegro libxml2 libxml2-devel
+
+    - name: Configure
+      run: ./configure
+
+    - name: Build
+      run: make
+
   release-windows-amd64:
     name: release windows-amd64
     runs-on: windows-latest
