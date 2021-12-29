@@ -16,8 +16,8 @@ jobs:
 
     - name: Dependencies
       run: |
-        apt update
-        apt install -y allegro libxml2 libxml2-devel
+        sudo apt update
+        sudo apt install -y allegro libxml2 libxml2-devel
 
     - name: Configure
       run: ./configure
