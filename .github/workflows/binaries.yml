@@ -23,7 +23,7 @@ jobs:
       run: ./configure
 
     - name: Build
-      run: make
+      run: make -C src -f Makefile.mingw
 
     #- uses: "marvinpinto/action-automatic-releases@latest"
     #  with:
