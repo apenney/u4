@@ -18,6 +18,8 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -y liballegro5-dev libxml2 libxml2-dev
+        sudo curl -O /usr/bin/boron http://urlan.sourceforge.net/boron/static/boron-2.0.7-Linux.x86_64
+        sudo chmod +x /usr/bin/boron
 
     - name: Configure
       run: ./configure
