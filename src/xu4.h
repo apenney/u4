@@ -2,7 +2,7 @@
  * xu4.h
  */
 
-#include "notify.h"
+#include "support/notify.h"
 
 enum NotifySender {
     // Sender Id           Message
