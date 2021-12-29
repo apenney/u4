@@ -19,8 +19,8 @@ jobs:
         msystem: MSYS
         install: >-
           mingw-w64-x86_64-allegro
-          mingw-w64-x86_64-libxml2
-          mingw-w64-x86_64-libxml
+          libxml2
+          libxml2-devel
 
     - name: Configure
       run: ./configure
