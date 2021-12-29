@@ -17,11 +17,13 @@ jobs:
     - uses: msys2/setup-msys2@v2
       with:
         msystem: MSYS
+        install: mingw-w64-x86_64-allegro
 
-    - run: |
-        pacman -S mingw-w64-x86_64-allegro
-        ./configure
-        make
+    - name: Configure
+      run: ./configure
+
+    - name: Build
+      run: make
 
     #- uses: "marvinpinto/action-automatic-releases@latest"
     #  with:
