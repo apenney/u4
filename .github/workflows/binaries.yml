@@ -26,7 +26,7 @@ jobs:
         cd boron
         ./configure
         make
-        make install install-dev
+        sudo make install install-dev
 
     - name: Configure
       run: ./configure
