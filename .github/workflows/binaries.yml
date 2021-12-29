@@ -20,6 +20,7 @@ jobs:
         install: >-
           mingw-w64-x86_64-allegro
           mingw-w64-x86_64-libxml2
+          mingw-w64-x86_64-libxml
 
     - name: Configure
       run: ./configure
