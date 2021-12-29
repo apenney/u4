@@ -6,7 +6,7 @@
 #define IMAGE_H
 
 #include <cstddef>
-#include "image32.h"
+#include "support/image32.h"
 
 #if defined(IOS)
 typedef struct CGImage *CGImageRef;
